@@ -5,33 +5,32 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
 html {
   scroll-behavior: smooth;
   font-family: 'Raleway', sans-serif;
 }
 
-@layer base {
-  body {
-    @apply bg-[#1c1e36] text-[#d6d6d6] tracking-wide
-  }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f141b; /* Light gray background */
+  color: #ffffff; /* Dark gray text color */
+  letter-spacing: 0.025em;
+}
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-bold
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
 
-  h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
-  }
+h1 {
+  font-size: 2.25rem;
+  @media (min-width: 640px) { font-size: 3rem; }
+  @media (min-width: 768px) { font-size: 3.75rem; }
+  font-family: 'Raleway', sans-serif;
+}
 
-  h2 {
-    @apply text-3xl sm:text-4xl
-  }
-  
-  li {
-    @apply cursor-pointer
-  }
-
-  button {
-    @apply  rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
-  }
+h2 {
+  font-size: 1.875rem;
+  @media (min-width: 640px) { font-size: 2.25rem; }
 }
