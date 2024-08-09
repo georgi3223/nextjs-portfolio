@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+  }
+  
+  .content {
+    max-width: 1240px;
+    margin: auto;
+    padding: 4rem 1rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.25rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: #5651e5;
+  }
+  
+  .heading {
+    padding: 1rem 0;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  

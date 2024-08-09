@@ -1,0 +1,41 @@
+.footer {
+    background-color: #1c1e36;
+    color: #ecf0f1;
+    padding: 2rem 0;
+    text-align: center;
+    position:fixed;
+  
+    .footerContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .socialIcons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+  
+      .icon {
+        font-size: 1.5rem;
+        color: #ecf0f1;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: #3498db;
+        }
+      }
+    }
+  
+    .contact {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+  
+    .copyright {
+      font-size: 0.8rem;
+    }
+  }
+  

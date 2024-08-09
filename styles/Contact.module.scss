@@ -1,0 +1,204 @@
+$primary-color: #5651e5;
+$shadow-color: rgba(128, 128, 128, 0.5);
+$gray-color: #4b5563;
+$light-gray-color: #e5e7eb;
+
+.container {
+  width: 100%;
+  @media (min-width: 1024px) {
+    height: 100vh;
+  }
+}
+
+.innerContainer {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 2rem 0.5rem;
+  width: 100%;
+}
+
+.title {
+  font-size: 1.25rem;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+  color: $primary-color;
+}
+
+.subtitle {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.leftContainer {
+  grid-column: span 3;
+
+  @media (min-width: 1024px) {
+    grid-column: span 2;
+  }
+
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 20px $shadow-color;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.leftContent {
+  @media (min-width: 1024px) {
+    padding: 1rem;
+  }
+
+  height: 100%;
+}
+
+.contactImage {
+  border-radius: 1rem;
+  transition: transform 0.3s ease-in;
+
+
+}
+
+.name {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.role {
+  padding-bottom: 0.5rem;
+}
+
+.availability {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.connect {
+  text-transform: uppercase;
+  padding-top: 2rem;
+}
+
+.iconsContainer {
+  display: flex;
+  align-items: center;
+  
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.icon {
+  border-radius: 50%;
+  box-shadow: 0 10px 20px $shadow-color;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.rightContainer {
+  grid-column: span 3;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 10px 20px $shadow-color;
+  border-radius: 1rem;
+
+  @media (min-width: 1024px) {
+    padding: 1rem;
+  }
+}
+
+.formContainer {
+  padding: 1rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+  padding-top: 0.5rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.input {
+  border: 2px solid $light-gray-color;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  display: flex;
+}
+
+.textarea {
+  border: 2px solid $light-gray-color;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  margin-top: 1rem;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.scrollUpContainer {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.scrollUpIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollUpChevron {
+  color: #3498db;
+  transition: color 0.3s;
+}
+
+.scrollUpChevron:hover {
+  color: #2980b9;
+}
