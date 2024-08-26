@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import ProjectItem from './ProjectItem';
-import styles from '../styles/Projects.module.scss'; 
+import styles from '../styles/Projects.module.scss';
 
 const Projects = () => {
   return (
@@ -11,8 +11,13 @@ const Projects = () => {
         <p className={styles.sectionTitle}>Projects</p>
         <h2 className={styles.heading}>What I&apos;ve Built</h2>
         <div className={styles.grid}>
-          
-        
+          {/* Adding a ProjectItem component */}
+          <ProjectItem 
+            title="E-commerce Platform with Vue.js and Laravel" 
+            description="A fully functional e-commerce application built with Laravel."
+            
+            projectUrl="https://github.com/georgi3223/laravel-ecommerce"
+          />
         </div>
       </div>
     </div>

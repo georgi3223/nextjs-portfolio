@@ -98,64 +98,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Right Section */}
-          <div className={styles.rightContainer}>
-            <div className={styles.formContainer}>
-              <form onSubmit={handleSubmit}>
-                <div className={styles.formGrid}>
-                  <div className={styles.formField}>
-                    <label className={styles.label}>Name</label>
-                    <input
-                      className={styles.input}
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                </div>
-                <div className={styles.formField}>
-                  <label className={styles.label}>Email</label>
-                  <input
-                    className={styles.input}
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div className={styles.formField}>
-                  <label className={styles.label}>Subject</label>
-                  <input
-                    className={styles.input}
-                    type="text"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-                <div className={styles.formField}>
-                  <label className={styles.label}>Message</label>
-                  <textarea
-                    className={styles.textarea}
-                    rows="10"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                  ></textarea>
-                </div>
-                <button type="submit" className={styles.submitButton} disabled={loading}>
-                  {loading ? 'Sending...' : 'Send Message'}
-                </button>
-              </form>
-              {successMessage && <p className={styles.successMessage}>{successMessage}</p>}
-              {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
-            </div>
-          </div>
         </div>
       </div>
     </div>
