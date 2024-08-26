@@ -13,7 +13,7 @@ const Projects = () => {
         <div className={styles.grid}>
           {/* Adding a ProjectItem component */}
           <ProjectItem 
-            title="E-commerce Platform with Vue.js and Laravel" 
+            title="E-commerce build with Laravel" 
             description="A fully functional e-commerce application built with Laravel."
             
             projectUrl="https://github.com/georgi3223/laravel-ecommerce"
