@@ -7,51 +7,7 @@ import ContactImg from '../public/assets/contact.jpg';
 import styles from '../styles/Contact.module.scss';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
 
-  const [loading, setLoading] = useState(false);
-  const [successMessage, setSuccessMessage] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setSuccessMessage('');
-    setErrorMessage('');
-
-    try {
-      const serviceID = 'YOUR_SERVICE_ID';
-      const templateID = 'YOUR_TEMPLATE_ID';
-      const userID = 'YOUR_USER_ID';
-
-      await emailjs.send(serviceID, templateID, formData, userID);
-      setLoading(false);
-      setSuccessMessage('Message sent successfully!');
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: '',
-      });
-    } catch (error) {
-      setLoading(false);
-      setErrorMessage('Failed to send message. Please try again later.');
-      console.error('EmailJS error:', error);
-    }
-  };
 
   return (
     <div id="contact" className={styles.container}>
