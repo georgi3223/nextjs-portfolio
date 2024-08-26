@@ -15,7 +15,7 @@ const Main = () => {
           <h1 className={styles.name}>
             Hi, I'm <span className={styles.highlight}>Georgi Nyagolov</span>
           </h1>
-          <h1 className={styles.role}>A Web Developer</h1>
+          <h1 className={styles.role}> Web Developer</h1>
           <p className={styles.description}>
             I’m focused on building responsive web applications
             integrating back-end technologies.
