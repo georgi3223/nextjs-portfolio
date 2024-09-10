@@ -19,8 +19,18 @@ const Projects = () => {
             projectUrl="https://github.com/georgi3223/laravel-ecommerce"
           />
         </div>
+        <div className={styles.grid}>
+          {/* Adding a ProjectItem component */}
+          <ProjectItem 
+            title="E-commerce build with Spring Boot" 
+            description="A fully functional e-commerce application built with Laravel."
+            
+            projectUrl="https://github.com/georgi3223/ecommerce-spring-boot"
+          />
+        </div>
       </div>
     </div>
+    
   );
 };
 
