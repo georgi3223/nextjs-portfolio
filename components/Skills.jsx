@@ -5,7 +5,9 @@ import Css from '../public/assets/skills/css.png';
 import Javascript from '../public/assets/skills/javascript.png';
 import ReactImg from '../public/assets/skills/react.png';
 import Github from '../public/assets/skills/github1.png';
-import NextJS from '../public/assets/skills/nextjs.png';
+
+import Java from '../public/assets/skills/java.png';
+import Spring from '../public/assets/skills/springboot.png';
 import styles from '../styles/Skills.module.scss'; 
 
 
@@ -69,10 +71,18 @@ const Skills = () => {
           <div className={styles.card}>
             <div className={styles.cardContent}>
               <div className={styles.icon}>
-                <Image src={NextJS} width='64px' height='64px' alt='NextJS' />
+                <Image src={Java} width='64px' height='64px' alt='Java'/>
+                <h3>Java</h3>
+              </div>
+            </div>
+          </div>
+          <div className={styles.card}>
+            <div className={styles.cardContent}>
+              <div className={styles.icon}>
+                <Image src={Spring} width='64px' height='64px' alt='NextJS' />
               </div>
               <div className={styles.label}>
-                <h3>Next</h3>
+                <h3>Spring</h3>
               </div>
             </div>
           </div>

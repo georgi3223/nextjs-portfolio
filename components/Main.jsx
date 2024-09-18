@@ -41,11 +41,6 @@ const Main = () => {
                 <FaGithub />
               </div>
             </a>
-            <Link href="/#contact">
-              <div className={styles.icon}>
-                <AiOutlineMail />
-              </div>
-            </Link>
           </div>
         </div>
       </div>
