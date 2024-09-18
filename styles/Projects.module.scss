@@ -21,7 +21,7 @@
   
   .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 2rem; /* Space between grid items */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem; 
     margin-bottom: 2rem;
   }

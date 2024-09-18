@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/ProjectItem.module.scss';
 
+
 const ProjectItem = ({ title, description, imageUrl, projectUrl }) => {
   return (
     <div className={styles.projectItem}>

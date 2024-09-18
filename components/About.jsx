@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AboutImg from '../public/assets/about.jpg';
 import styles from '../styles/About.module.scss'; 
 
+
 const About = () => {
   return (
     <div id="about" className={styles.container}>

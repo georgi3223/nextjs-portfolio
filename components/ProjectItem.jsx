@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import styles from '../styles/ProjectItem.module.scss'; // Import the SCSS module
+import styles from '../styles/ProjectItem.module.scss'; 
+
 
 const ProjectItem = ({ title, backgroundImg, tech, projectUrl }) => {
   return (

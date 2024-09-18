@@ -6,6 +6,7 @@ import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import ContactImg from '../public/assets/contact.jpg';
 import styles from '../styles/Contact.module.scss';
 
+
 const Contact = () => {
   return (
     <div id="contact" className={styles.container}>

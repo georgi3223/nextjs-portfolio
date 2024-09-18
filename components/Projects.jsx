@@ -4,6 +4,7 @@ import React from 'react';
 import ProjectItem from './ProjectItem';
 import styles from '../styles/Projects.module.scss';
 
+
 const Projects = () => {
   return (
     <div id='projects' className={styles.container}>
@@ -23,9 +24,9 @@ const Projects = () => {
           {/* Adding a ProjectItem component */}
           <ProjectItem 
             title="E-commerce build with Spring Boot" 
-            description="A fully functional e-commerce application built with Laravel."
+            description="A fully functional e-commerce application built with Spring Boot"
             
-            projectUrl="https://github.com/georgi3223/ecommerce-spring-boot"
+            projectUrl="https://github.com/georgi3223/e-commerce-spring-boot"
           />
         </div>
       </div>

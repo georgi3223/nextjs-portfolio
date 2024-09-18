@@ -8,6 +8,7 @@ import Github from '../public/assets/skills/github1.png';
 import NextJS from '../public/assets/skills/nextjs.png';
 import styles from '../styles/Skills.module.scss'; 
 
+
 const Skills = () => {
   return (
     <div id='skills' className={styles.container}>

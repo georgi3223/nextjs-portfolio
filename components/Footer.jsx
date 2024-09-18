@@ -2,6 +2,7 @@ import React from 'react';
 import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import styles from '../styles/Footer.module.scss'; // Import SCSS module
 
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>
